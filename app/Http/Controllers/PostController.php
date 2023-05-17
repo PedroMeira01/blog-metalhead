@@ -13,10 +13,13 @@ class PostController extends Controller
 
     public function show($id) {
 
+        $posts = Post::all();
+
+        return view('post');
     }
 
     public function create() {
-
+        return view('create');
     }
 
     public function store() {
